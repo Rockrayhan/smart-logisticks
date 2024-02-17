@@ -1,0 +1,37 @@
+body {
+background-color: rgb(85, 85, 85);
+overflow-x: hidden;
+}
+
+.step {
+  /* Default styling for step numbers */
+}
+
+.step.active {
+  /* Active step styling */
+  color: blue; /* Example */
+}
+
+
+
+.active-step {
+  background-color: blue !important; /* Active step color */
+  color: white !important;
+}
+.inactive-step {
+  background-color: gray; /* Inactive step color */
+  color: black;
+}
+
+/* Additional styling */
+.active-step,
+.inactive-step {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px;
+}
