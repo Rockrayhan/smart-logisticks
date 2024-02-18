@@ -14,24 +14,26 @@ const Home = () => {
     setCurrentStep(step);
   };
   return (
-    <div className="d-flex justify-content-between my-5 container">
+<div className="flex justify-between my-5 mx-10">
 
-      <div>
-    <div className="my-5" >
-        <ActiveStep currentStep={currentStep}/>
-    </div>
+<div className="w-1/2">
+  <div className="my-5">
+    <ActiveStep currentStep={currentStep}/>
+  </div>
 
-        <StepWizard onStepChange={handleStepChange}>
-          <Step1/>
-          <Step2/>
-          <Step3/>
-        </StepWizard>
+  <StepWizard onStepChange={handleStepChange}>
+    <Step1/>
+    <Step2/>
+    <Step3/>
+  </StepWizard>
+</div>
 
-      </div>
-      <div>
-        <img className="w-75 rounded rounded-5" src="https://img.freepik.com/free-vector/delivery-staff-ride-motorcycles-shopping-concept_1150-34879.jpg" alt="" />
-      </div>
-    </div>
+<div className="w-1/2">
+  <img className="w-full rounded-md" src="https://img.freepik.com/free-vector/delivery-staff-ride-motorcycles-shopping-concept_1150-34879.jpg" alt="" />
+</div>
+
+</div>
+
   );
 };
 
